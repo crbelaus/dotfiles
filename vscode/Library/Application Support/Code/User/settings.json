@@ -1,21 +1,20 @@
 {
   // Editor
-  "editor.rulers": [80],
+  "editor.rulers": [80, 98],
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.fontSize": 14,
-  "editor.fontFamily": "Cascadia Code, Iosevka, Fira mono, Ubuntu mono, Monospace",
-  "editor.fontWeight": "500",
   "editor.cursorStyle": "block",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.renderIndentGuides": false,
 
   // Breadcrumbs
   "breadcrumbs.enabled": false,
 
   // Terminal
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.fontSize": 15,
 ​
   // Window
   "window.titleBarStyle": "custom",
@@ -29,7 +28,6 @@
   "workbench.editor.labelFormat": "medium",
   "workbench.enableExperiments": false,
   "workbench.quickOpen.preserveInput": true,
-  "workbench.colorTheme": "Monokai",
 ​
   // Files
   "files.insertFinalNewline": true,
@@ -67,7 +65,7 @@
   // Emmet
   "emmet.includeLanguages": {
     "html-eex": "html",
-    "erb": "html"
+    "html.erb": "html"
   },
 ​
   // Elixir
@@ -88,21 +86,22 @@
   "elixirLS.fetchDeps": false,
 
   "[markdown]": {
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
     "editor.quickSuggestions": false,
     "files.trimTrailingWhitespace": false
   },
 
   // JSON
   "json.format.enable": false,
-
-  // Diff editor
-  "diffEditor.renderSideBySide": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.defaultDateStyle": "absolute",
 
   "[git-commit]": {
     "editor.rulers": [50, 72]
   },
-  "window.zoomLevel": 0
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.inlineSuggest.enabled": true,
+  "diffEditor.renderSideBySide": false,
+  "workbench.colorTheme": "Monokai"
 }
