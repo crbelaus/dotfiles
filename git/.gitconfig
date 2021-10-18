@@ -1,5 +1,5 @@
 [user]
-	name = belaustegui
+	name = crbelaus
 	email = cristian.alvb@gmail.com
 [core]
 	excludesfile = ~/.config/git/.global-gitignore
@@ -14,3 +14,5 @@
 	algorithm = histogram
 [protocol]
 	version = 2
+[init]
+	defaultBranch = main
