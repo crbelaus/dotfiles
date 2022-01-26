@@ -8,7 +8,10 @@
   "editor.fontSize": 14,
   "editor.cursorStyle": "block",
   "editor.bracketPairColorization.enabled": true,
-  "editor.renderIndentGuides": false,
+  "editor.linkedEditing": true,
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.smoothScrolling": true,
 
   // Breadcrumbs
   "breadcrumbs.enabled": false,
@@ -21,7 +24,6 @@
 
   // Workbench
   "workbench.settings.editor": "json",
-  "workbench.activityBar.visible": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.commandPalette.preserveInput": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -44,10 +46,6 @@
     "**/.vscode": true,
     "**/.elixir_ls": true
   },
-  "files.associations": {
-    "*.module": "php",
-    "*.theme": "php"
-  },
 
   // Explorer
   "explorer.openEditors.visible": 0,
@@ -61,11 +59,14 @@
     "**/uploads": true,
     "vendor/bundle": true
   },
+  // "search.mode": "newEditor",
+  // "search.searchEditor.defaultNumberOfContextLines": 2,
+  // "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
 ​
   // Emmet
   "emmet.includeLanguages": {
     "html-eex": "html",
-    "html.erb": "html"
+    "phoenix-heex": "html",
   },
 ​
   // Elixir
@@ -79,7 +80,7 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "editor.formatOnSave": true,
-    "editor.rulers": [100]
+    "editor.rulers": [98]
   },
   "elixirLS.dialyzerEnabled": false,
   "elixirLS.suggestSpecs": false,
@@ -94,6 +95,7 @@
 
   // JSON
   "json.format.enable": false,
+
   "gitlens.codeLens.enabled": false,
   "gitlens.defaultDateStyle": "absolute",
 
@@ -102,6 +104,11 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "Monokai",
+  "gitlens.mode.active": "review",
+  "workbench.activityBar.visible": false,
   "diffEditor.renderSideBySide": false,
-  "workbench.colorTheme": "Monokai"
+  "githubPullRequests.fileListLayout": "flat",
+
+  "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths"
 }
