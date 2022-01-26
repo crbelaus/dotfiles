@@ -1,17 +1,2 @@
 // Place your key bindings in this file to overwrite the defaults
-[
-  {
-    "key": "ctrl+7",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+s",
-    "command": "workbench.action.files.saveAll"
-  }
-]
+[]
