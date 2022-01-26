@@ -6,6 +6,7 @@
 	editor = vim
 [merge]
 	ff = false
+	conflictstyle = zdiff3
 [branch]
 	autosetuprebase = always
 [pager]
