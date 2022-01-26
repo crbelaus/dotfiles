@@ -3,6 +3,10 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.config/oh-my-zsh
+# Add PostgreSQL 13 to the path. This is not automatically done by Brew because
+# it is an alternative version of the PostgreSQL formula, which gets updated
+# with the release of new PostgreSQL versions.
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
