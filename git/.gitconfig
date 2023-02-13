@@ -1,9 +1,9 @@
 [user]
 	name = crbelaus
-	email = cristian.alvb@gmail.com
+	email = cristian@crbelaus.com
 [core]
 	excludesfile = ~/.config/git/.global-gitignore
-	editor = vim
+	editor = code --wait
 [merge]
 	ff = false
 	conflictstyle = zdiff3
@@ -11,9 +11,19 @@
 	autosetuprebase = always
 [pager]
 	branch = false
+	difftool = true
 [diff]
 	algorithm = histogram
+	tool = difftastic
 [protocol]
 	version = 2
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[log]
+	date = local

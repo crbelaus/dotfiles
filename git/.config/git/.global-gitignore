@@ -14,3 +14,7 @@ vendor/bundle
 
 # Temporal directory for saving temporal garbage in projects
 tmp/
+
+# Nix artifacts until confirmed stable
+shell.nix
+.envrc
