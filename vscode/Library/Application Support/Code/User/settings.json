@@ -1,114 +1,133 @@
 {
-  // Editor
-  "editor.rulers": [80, 98],
-  "editor.minimap.enabled": false,
-  "editor.wordWrap": "on",
-  "editor.tabSize": 2,
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.fontSize": 14,
-  "editor.cursorStyle": "block",
+  // === Editor ===
   "editor.bracketPairColorization.enabled": true,
-  "editor.linkedEditing": true,
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80],
   "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.wordWrap": "on",
+  "editor.cursorStyle": "block",
+  "editor.acceptSuggestionOnEnter": "off",
 
-  // Breadcrumbs
+  // === Breadcrumbs ===
   "breadcrumbs.enabled": false,
 
-  // Terminal
-  "terminal.integrated.fontSize": 15,
-​
-  // Window
-  "window.titleBarStyle": "custom",
+  // === Terminal ===
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontSize": 14,
 
-  // Workbench
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "newUntitledFile",
+  // === Window ===
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
   "workbench.commandPalette.preserveInput": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
   "workbench.enableExperiments": false,
   "workbench.quickOpen.preserveInput": true,
-​
-  // Files
-  "files.insertFinalNewline": true,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+
+  // === Files ===
+  "files.exclude": {
+    "**/_build": true,
+    "**/.DS_Store": true,
+    "**/.elixir_ls": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/CVS": true
+  },
   "files.hotExit": "onExitAndWindowClose",
+  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/_build": true,
-    "**/.vscode": true,
-    "**/.elixir_ls": true
-  },
 
-  // Explorer
-  "explorer.openEditors.visible": 0,
+  // === Explorer ===
   "explorer.autoReveal": false,
-​
-  // Search
+  "explorer.openEditors.visible": 0,
+
+  // === Search ===
   "search.exclude": {
-    "**/node_modules": true,
     "**/bower_components": true,
     "**/deps": true,
+    "**/node_modules": true,
     "**/uploads": true,
-    "vendor/bundle": true
+    "vendor/bundle": true,
+    "frontend/**": true
   },
-  // "search.mode": "newEditor",
-  // "search.searchEditor.defaultNumberOfContextLines": 2,
-  // "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
-​
-  // Emmet
+
+  // === Emmet ===
   "emmet.includeLanguages": {
-    "html-eex": "html",
     "phoenix-heex": "html",
   },
-​
-  // Elixir
+
+  // === Languages: Elixir ===
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.fetchDeps": true,
+  "elixirLS.suggestSpecs": false,
   "[elixir]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.wordBasedSuggestions": false,
-    "editor.formatOnType": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.trimAutoWhitespace": true,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.rulers": [98]
   },
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.suggestSpecs": false,
-  "elixirLS.fetchDeps": false,
+  // https://pragmaticstudio.com/tutorials/formatting-heex-templates-in-vscode
+  "[phoenix-heex]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [98]
+  },
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
 
+  // === Languages: Markdown ===
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
+    // Sometimes trailing spaces have significance in Markdown so we want to
+    // preserve them.
     "files.trimTrailingWhitespace": false
   },
 
-  // JSON
-  "json.format.enable": false,
-
-  "gitlens.codeLens.enabled": false,
-  "gitlens.defaultDateStyle": "absolute",
+  // === Languages: CSV ===
+  "[csv]": {
+    "editor.wordWrap": "off"
+  },
 
   "[git-commit]": {
-    "editor.rulers": [50, 72]
+    "editor.rulers": [50, 72],
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
   },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.inlineSuggest.enabled": true,
-  "workbench.colorTheme": "Monokai",
-  "gitlens.mode.active": "review",
-  "workbench.activityBar.visible": false,
-  "diffEditor.renderSideBySide": false,
-  "githubPullRequests.fileListLayout": "flat",
 
-  "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths"
+  // === Git ===
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.defaultDateStyle": "absolute",
+  "git.mergeEditor": false,
+
+  // === Extensions ===
+  "extensions.ignoreRecommendations": true,
+
+  // === Workbench ===
+  "workbench.activityBar.visible": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "excalidraw.theme": "light"
 }
