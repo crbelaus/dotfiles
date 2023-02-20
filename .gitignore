@@ -1,2 +1,2 @@
-vscode/.config/Code
-!vscode/.config/Code/User/*
+# VSCode has a lot of files that we are not interested in
+vscode/Library/Application Support/Code

@@ -129,5 +129,6 @@
   // === Workbench ===
   "workbench.activityBar.visible": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "excalidraw.theme": "light"
+  "excalidraw.theme": "light",
+  "workbench.colorTheme": "Default Light+"
 }
