@@ -1,5 +1,4 @@
 # dotfiles
-Configuration is magic. Here is mine.
 
 ## How to install.
 
@@ -19,8 +18,9 @@ possible errors without making any changes in the filesystem. You can do this
 with the command:
 
     cd ~/Dotfiles
-    stow -n bash # For bash configuration
+    stow -n zsh # For zsh configuration
     stow -n git # For git configuration
+    stow -n vscode # For VSCode configuration
 
 We may get some warning messages like the following one.
 
@@ -31,8 +31,7 @@ We may get some warning messages like the following one.
     All operations aborted.
 
 This means that the file `.gitconfig` exists before the symlinking. We need to
-manually change its name so GNU Stow can create the symlink. My recommendation is
-to rename it:
+manually change its name so GNU Stow can create the symlink. My recommendation is to rename it:
 
     mv ~/.gitconfig ~/.gitconfig.old
 
@@ -47,5 +46,6 @@ After all conflicting files have been renamed, we should not get any warnings:
 We can now write the changes to disk removing the `-n` modifier:
 
     cd ~/Dotfiles
-    stow bash
+    stow zsh
     stow git
+    stow vscode
