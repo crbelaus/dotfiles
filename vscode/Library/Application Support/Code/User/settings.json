@@ -3,7 +3,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 15,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
@@ -21,7 +21,7 @@
 
   // === Terminal ===
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
 
   // === Window ===
   "window.commandCenter": true,
@@ -66,22 +66,23 @@
 
   // === Emmet ===
   "emmet.includeLanguages": {
+    "elixir": "html",
     "phoenix-heex": "html",
   },
 
   // === Languages: Elixir ===
   "elixirLS.dialyzerEnabled": false,
-  "elixirLS.fetchDeps": true,
+  "elixirLS.fetchDeps": false,
   "elixirLS.suggestSpecs": false,
   "[elixir]": {
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
     "editor.rulers": [98]
   },
   // https://pragmaticstudio.com/tutorials/formatting-heex-templates-in-vscode
   "[phoenix-heex]": {
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
     "editor.rulers": [98]
   },
   "files.associations": {
@@ -129,6 +130,5 @@
   // === Workbench ===
   "workbench.activityBar.visible": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "excalidraw.theme": "light",
-  "workbench.colorTheme": "Default Light+"
+  "excalidraw.theme": "light"
 }
