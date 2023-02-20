@@ -3,15 +3,14 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.config/oh-my-zsh
-# Add PostgreSQL 13 to the path. This is not automatically done by Brew because
-# it is an alternative version of the PostgreSQL formula, which gets updated
-# with the release of new PostgreSQL versions.
-export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
+
+# Use alternative versions from homebrew formulas
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="crbelaus"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,7 +54,7 @@ ZSH_CUSTOM=$HOME/.config/oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf gcloud git)
+plugins=(asdf git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,12 +74,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Avoid Homebrew to auto update
-export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
