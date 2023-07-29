@@ -1,31 +1,27 @@
 {
   // === Editor ===
   "editor.bracketPairColorization.enabled": true,
-  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Iosevka, Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 17,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
-  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
-  "editor.rulers": [80],
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
   "editor.wordWrap": "on",
-  "editor.cursorStyle": "block",
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.guides.indentation": false,
 
   // === Breadcrumbs ===
   "breadcrumbs.enabled": false,
 
   // === Terminal ===
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
 
-  // === Window ===
-  "window.commandCenter": true,
-  "window.titleBarStyle": "custom",
+  // === Workbench ===
   "workbench.commandPalette.preserveInput": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "medium",
@@ -33,16 +29,18 @@
   "workbench.quickOpen.preserveInput": true,
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": false,
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.colorTheme": "Atom One Dark",
 
   // === Files ===
   "files.exclude": {
     "**/_build": true,
     "**/.DS_Store": true,
-    "**/.elixir_ls": true,
     "**/.git": true,
     "**/.hg": true,
     "**/.svn": true,
-    "**/.vscode": true,
     "**/CVS": true
   },
   "files.hotExit": "onExitAndWindowClose",
@@ -52,41 +50,31 @@
 
   // === Explorer ===
   "explorer.autoReveal": false,
-  "explorer.openEditors.visible": 0,
 
   // === Search ===
   "search.exclude": {
-    "**/bower_components": true,
     "**/deps": true,
-    "**/node_modules": true,
-    "**/uploads": true,
-    "vendor/bundle": true,
-    "frontend/**": true
+    "**/node_modules": true
   },
 
   // === Emmet ===
   "emmet.includeLanguages": {
-    "elixir": "html",
-    "phoenix-heex": "html",
+    "phoenix-heex": "html"
   },
 
   // === Languages: Elixir ===
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.fetchDeps": false,
-  "elixirLS.suggestSpecs": false,
-  "[elixir]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.rulers": [98]
-  },
-  // https://pragmaticstudio.com/tutorials/formatting-heex-templates-in-vscode
-  "[phoenix-heex]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.rulers": [98]
-  },
+  "lexical.server.releasePathOverride": "/Users/crbelaus/Developer/lexical/_build/dev/rel/lexical",
   "files.associations": {
-    "*.heex": "phoenix-heex"
+    "*.html.heex": "phoenix-heex"
+  },
+  "[elixir]": {
+    "editor.rulers": [
+      100
+    ],
+    "editor.formatOnSave": true
+  },
+  "[phoenix-heex]": {
+    "editor.formatOnSave": true
   },
 
   // === Languages: Markdown ===
@@ -97,10 +85,7 @@
       "comments": "off",
       "other": "off",
       "strings": "off"
-    },
-    // Sometimes trailing spaces have significance in Markdown so we want to
-    // preserve them.
-    "files.trimTrailingWhitespace": false
+    }
   },
 
   // === Languages: CSV ===
@@ -108,13 +93,17 @@
     "editor.wordWrap": "off"
   },
 
+  // === Languages: Git Commit ===
   "[git-commit]": {
-    "editor.rulers": [50, 72],
+    "editor.rulers": [
+      50,
+      72
+    ],
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "off",
       "strings": "off"
-    },
+    }
   },
 
   // === Git ===
@@ -122,13 +111,5 @@
   "diffEditor.renderSideBySide": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.defaultDateStyle": "absolute",
-  "git.mergeEditor": false,
-
-  // === Extensions ===
-  "extensions.ignoreRecommendations": true,
-
-  // === Workbench ===
-  "workbench.activityBar.visible": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "excalidraw.theme": "light"
+  "git.mergeEditor": false
 }
