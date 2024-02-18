@@ -20,7 +20,6 @@ with the command:
     cd ~/Dotfiles
     stow -n zsh # For zsh configuration
     stow -n git # For git configuration
-    stow -n vscode # For VSCode configuration
 
 We may get some warning messages like the following one.
 
@@ -48,4 +47,3 @@ We can now write the changes to disk removing the `-n` modifier:
     cd ~/Dotfiles
     stow zsh
     stow git
-    stow vscode
