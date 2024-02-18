@@ -1,9 +1,9 @@
 [user]
 	name = crbelaus
-	email = cristian.alvarez@hey.com
+	email = cristian@crbelaus.com
 [core]
 	excludesfile = ~/.config/git/.global-gitignore
-	editor = vim
+	editor = code --wait
 [merge]
 	ff = false
 	conflictstyle = zdiff3
