@@ -1,3 +1,4 @@
+# https://jvns.ca/blog/2024/02/16/popular-git-config-options/
 [user]
 	name = crbelaus
 	email = cristian@crbelaus.com
@@ -14,16 +15,17 @@
 	difftool = true
 [diff]
 	algorithm = histogram
-	tool = difftastic
 [protocol]
 	version = 2
 [init]
+	# Use `main` as the default branch name when initializing a repository
+	# https://git-scm.com/docs/git-init#Documentation/git-init.txt-initdefaultBranch
 	defaultBranch = main
+[rebase]
+	# Autosquash fixup commits automatically when rebasing
+	# https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt-rebaseautoSquash
+	autoSquash = true
 [push]
-	autoSetupRemote = true
-[difftool]
-	prompt = false
-[difftool "difftastic"]
-	cmd = difft "$LOCAL" "$REMOTE"
-[log]
-	date = local
+	# Push the current branch to the branch with the same name on the remote
+	# https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushdefault
+	default = current
