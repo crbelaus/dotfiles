@@ -12,9 +12,10 @@
 	autosetuprebase = always
 [pager]
 	branch = false
-	difftool = true
 [diff]
 	algorithm = histogram
+	# Use difftastic for syntax-aware diffing
+	external = difft
 [protocol]
 	version = 2
 [init]
