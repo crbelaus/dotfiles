@@ -11,6 +11,12 @@ The first step is to clone this repository in your $HOME folder:
 
     git clone --recursive https://github.com/belaustegui/dotfiles.git ~/Dotfiles
 
+Additionally, my git configuration requires a few external tools that should be installed by
+your package manager:
+
+    1. [difftastic](https://difftastic.wilfred.me.uk/) for syntax-aware diffing
+    2. [neovim](https://neovim.io/) a modern vim reimplementation
+
 ### 1. Simulate changes
 
 The first step is to run GNU Stow in simulation mode. This would warn about all
