@@ -6,17 +6,23 @@
 	excludesfile = ~/.config/git/.global-gitignore
 	editor = nvim
 [merge]
+	# Disable fast forward merges, forcing a merge commit.
 	ff = false
+	# Use zdiff3 style for conflict resolution, which provides more context
 	conflictstyle = zdiff3
 [branch]
+	# Automatically set up new branches to rebase instead merge when pulling
 	autosetuprebase = always
 [pager]
+	# Disable pagination for the git branch command
 	branch = false
 [diff]
+	# Use the histogram algorithm for generating diffs, which is often more accurate
 	algorithm = histogram
 	# Use difftastic for syntax-aware diffing
 	external = difft
 [protocol]
+	# Git protocol version 2 is more efficient
 	version = 2
 [init]
 	# Use `main` as the default branch name when initializing a repository
