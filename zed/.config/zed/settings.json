@@ -1,0 +1,46 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b"
+    },
+    "version": "2"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Mirage"
+  },
+  "lsp": {
+    "elixir-ls": {
+      "settings": {
+        "dialyzerEnabled": false
+      }
+    },
+    "tailwindcss-language-server": {
+      "includeLanguages": {
+        "heex": "html",
+        "Elixir": "html"
+      }
+    }
+  },
+  "languages": {
+    "HEEX": {
+      "language_servers": [
+        "elixir-ls",
+        "tailwindcdd-language-server",
+        "emmet-language-server"
+      ]
+    }
+  }
+}
