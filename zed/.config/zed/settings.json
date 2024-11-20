@@ -21,6 +21,9 @@
     "light": "Ayu Light",
     "dark": "Ayu Mirage"
   },
+  "file_finder": {
+    "modal_width": "medium"
+  },
   "lsp": {
     "elixir-ls": {
       "settings": {
