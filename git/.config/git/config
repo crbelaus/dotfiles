@@ -37,4 +37,4 @@
 	# https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushdefault
 	default = current
 [alias]
-	core-diff = diff --no-ext-diff
+	basic-diff = diff --no-ext-diff
