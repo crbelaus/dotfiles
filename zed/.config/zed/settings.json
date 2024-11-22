@@ -22,7 +22,7 @@
     "dark": "Ayu Mirage"
   },
   "file_finder": {
-    "modal_width": "medium"
+    "modal_width": "large"
   },
   "lsp": {
     "elixir-ls": {
