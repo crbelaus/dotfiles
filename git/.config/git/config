@@ -46,3 +46,5 @@
 	# Push the current branch to the branch with the same name on the remote
 	# https://git-scm.com/docs/git-push#Documentation/git-push.txt-pushdefault
 	default = current
+[alias]
+	wdiff = diff --color-words
