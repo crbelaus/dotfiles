@@ -38,6 +38,10 @@
     }
   },
   "languages": {
+    "Git Commit": {
+      "show_wrap_guides": true,
+      "wrap_guides": [80]
+    },
     "Markdown": {
       "preferred_line_length": 100,
       "soft_wrap": "preferred_line_length"
