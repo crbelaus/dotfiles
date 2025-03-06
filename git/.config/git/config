@@ -4,7 +4,7 @@
 	email = cristian@crbelaus.com
 [core]
 	excludesfile = ~/.config/git/global_gitignore
-	editor = nvim
+	editor = vim
 [merge]
 	# Disable fast forward merges, forcing a merge commit.
 	ff = false
