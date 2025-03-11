@@ -3,4 +3,4 @@ name = "crbelaus"
 email = "cristian@crbelaus.com"
 
 [ui]
-editor = "vim"
+editor = "nvim"
