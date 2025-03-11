@@ -1,3 +1,0 @@
-[submodule "zsh/.config/oh-my-zsh"]
-	path = zsh/.config/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
