@@ -1,4 +1,8 @@
+# Tool version manager (asdf and mise)
 .tool-versions
+mise.toml
+
+# MacOS artifacts
 .DS_Store
 
 # Ruby projects
