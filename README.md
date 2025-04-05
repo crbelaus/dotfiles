@@ -9,13 +9,9 @@ tool for setting up the dotfiles.
 
 The first step is to clone this repository in your $HOME folder:
 
-    git clone --recursive https://github.com/belaustegui/dotfiles.git ~/Dotfiles
-
-Additionally, my git configuration requires a few external tools that should be installed by
-your package manager:
-
-    1. [difftastic](https://difftastic.wilfred.me.uk/) for syntax-aware diffing
-    2. [neovim](https://neovim.io/) a modern vim reimplementation
+    mkdir -p ~/Developer
+    cd ~/Developer
+    git clone https://github.com/belaustegui/dotfiles.git dotfiles
 
 ### 1. Simulate changes
 
@@ -23,14 +19,11 @@ The first step is to run GNU Stow in simulation mode. This would warn about all
 possible errors without making any changes in the filesystem. You can do this
 with the command:
 
-    cd ~/Dotfiles
-    stow -n zsh # For zsh configuration
-    stow -n git # For git configuration
+    cd ~/Developer/dotfiles
+    stow -n -t ~ fish git jj ghostty
 
 We may get some warning messages like the following one.
 
-    cd ~/Dotfiles
-    stow -n git
     WARNING! stowing git would cause conflicts:
       * existing target is neither a link nor a directory: .gitconfig
     All operations aborted.
@@ -42,14 +35,10 @@ manually change its name so GNU Stow can create the symlink. My recommendation i
 
 ### 2. Make changes
 
-After all conflicting files have been renamed, we should not get any warnings:
+After fixing the warnings we can now write the changes to disk by removing the `-n` modifier:
 
-    cd ~/Dotfiles
-    stow -n git
-    WARNING: in simulation mode so not modifying filesystem.
+    cd ~/Developer/dotfiles
+    stow -t ~ fish ghostty git jj
 
-We can now write the changes to disk removing the `-n` modifier:
-
-    cd ~/Dotfiles
-    stow zsh
-    stow git
+The `-t ~` flag tells stow to use `~` as the target directory for symlinks. Otherwise it will
+use the parent directory by default (so `~/Developer`).
