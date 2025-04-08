@@ -1,6 +1,5 @@
 # Tool version manager (asdf and mise)
-.tool-versions
-mise.toml
+mise.local.toml
 
 # MacOS artifacts
 .DS_Store
