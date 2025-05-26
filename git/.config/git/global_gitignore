@@ -1,23 +1,8 @@
-# Tool version manager (asdf and mise)
+# Tool version manager
 mise.local.toml
 
 # MacOS artifacts
 .DS_Store
 
-# Ruby projects
-vendor/bundle
-
-# Elixir projects
-.mix_tasks
-.elixir_ls
-
-# Visual Studio Code workspace configurations
-.vscode
-.vs
-
-# Temporal directory for saving temporal garbage in projects
-tmp/
-
-# Nix artifacts until confirmed stable
-shell.nix
-.envrc
+# Directory for saving tests, scripts and random things in projects
+.private/
