@@ -1,6 +1,9 @@
 # Tool version manager
 mise.local.toml
 
+# Claude code files
+CLAUDE.local.md
+
 # MacOS artifacts
 .DS_Store
 
