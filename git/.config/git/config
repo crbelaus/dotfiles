@@ -19,9 +19,6 @@
 [diff]
 	# Use the histogram algorithm for generating diffs, which is often more accurate
 	algorithm = histogram
-[protocol]
-	# Git protocol version 2 is more efficient
-	version = 2
 [init]
 	# Use `main` as the default branch name when initializing a repository
 	# https://git-scm.com/docs/git-init#Documentation/git-init.txt-initdefaultBranch
@@ -36,3 +33,7 @@
 	default = current
 [alias]
 	wdiff = diff --color-words
+	logo = log --oneline
+[log]
+	# Use ISO date format in logs
+	date = iso
