@@ -4,3 +4,4 @@ email = "cristian@crbelaus.com"
 
 [ui]
 editor = "nvim"
+diff-editor = ":builtin"
