@@ -3,6 +3,7 @@ mise.local.toml
 
 # Claude code files
 CLAUDE.local.md
+.claude/
 
 # MacOS artifacts
 .DS_Store
