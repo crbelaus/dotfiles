@@ -1,0 +1,4 @@
+# Track only the fish config and functions
+fish/.config/fish
+!fish/.config/fish/functions
+!fish/.config/fish/config
