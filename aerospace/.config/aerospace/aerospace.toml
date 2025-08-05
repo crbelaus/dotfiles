@@ -145,10 +145,10 @@ automatically-unhide-macos-hidden-apps = false
 
     # Shortcuts for launching applications
     # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-    ctrl-alt-cmd-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
-    ctrl-alt-cmd-b = 'exec-and-forget open -n /Applications/Brave\ Browser.app'
-    ctrl-alt-cmd-c = 'exec-and-forget open -n /Applications/Visual\ Studio\ Code.app --args --new-window'
-    ctrl-alt-cmd-k = 'exec-and-forget open -n /Applications/Ghostty.app --args -e k9s'
+    ctrl-alt-cmd-enter = 'exec-and-forget open -a "Ghostty.app" -n'
+    ctrl-alt-cmd-b = 'exec-and-forget open -a "Brave Browser.app" -n'
+    ctrl-alt-cmd-c = 'exec-and-forget open -a "Vistual Studio Code.app" -n --args --new-window'
+    ctrl-alt-cmd-k = 'exec-and-forget open -a "Ghostty.app" -n --args -e k9s'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
