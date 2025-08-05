@@ -143,6 +143,13 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     ctrl-alt-cmd-shift-semicolon = 'mode service'
 
+    # Shortcuts for launching applications
+    # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
+    ctrl-alt-cmd-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
+    ctrl-alt-cmd-b = 'exec-and-forget open -n /Applications/Brave\ Browser.app'
+    ctrl-alt-cmd-c = 'exec-and-forget open -n /Applications/Visual\ Studio\ Code.app --args --new-window'
+    ctrl-alt-cmd-k = 'exec-and-forget open -n /Applications/Ghostty.app --args -e k9s'
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
