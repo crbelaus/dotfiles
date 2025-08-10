@@ -1,4 +1,3 @@
 # Track only the fish config and functions
-fish/.config/fish
-!fish/.config/fish/functions
-!fish/.config/fish/config
+fish/.config/fish/completions
+fish/.config/fish/fish_variables
