@@ -173,3 +173,19 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+# Ensure that some apps windows always float by default
+[[on-window-detected]]
+    if.app-id = 'com.apple.Photos'
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.stocks'
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.weather'
+    check-further-callbacks = true
+    run = ['layout floating']
