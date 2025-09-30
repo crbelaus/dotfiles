@@ -191,6 +191,11 @@ automatically-unhide-macos-hidden-apps = false
     run = ['layout floating']
 
 [[on-window-detected]]
+    if.app-id = 'com.apple.ActivityMonitor'
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
     if.app-id = 'com.utmapp.UTM'
     check-further-callbacks = true
     run = ['layout floating']
