@@ -194,3 +194,9 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.utmapp.UTM'
     check-further-callbacks = true
     run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    if.window-title-regex-substring = 'Huddle'
+    check-further-callbacks = true
+    run = ['layout floating']
