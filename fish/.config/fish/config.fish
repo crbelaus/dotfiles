@@ -34,5 +34,7 @@ if type -q fzf
 end
 
 if status is-interactive
+    # Disable default fish greeting
+    set -g fish_greeting
     # Commands to run in interactive sessions can go here
 end
