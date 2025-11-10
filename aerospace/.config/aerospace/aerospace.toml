@@ -205,3 +205,8 @@ automatically-unhide-macos-hidden-apps = false
     if.window-title-regex-substring = 'Huddle'
     check-further-callbacks = true
     run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.rdc.macos'
+    check-further-callbacks = true
+    run = ['layout floating']
