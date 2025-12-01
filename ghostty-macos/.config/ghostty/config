@@ -3,3 +3,4 @@ font-size = 15
 cursor-style = block
 shell-integration-features = no-cursor
 bell-features=system
+shell-integration-features = ssh-terminfo,ssh-env
