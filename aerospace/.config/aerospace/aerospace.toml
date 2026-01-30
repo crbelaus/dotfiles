@@ -223,3 +223,15 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.microsoft.rdc.macos'
     check-further-callbacks = true
     run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = "org.mozilla.firefox"
+    if.window-title-regex-substring = "Picture-in-Picture"
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    if.window-title-regex-substring = 'Picture in Picture'
+    check-further-callbacks = true
+    run = ['layout floating']
