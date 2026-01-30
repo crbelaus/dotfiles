@@ -55,12 +55,25 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 3
-    inner.vertical =   3
-    outer.left =       3
-    outer.bottom =     3
-    outer.top =        3
-    outer.right =      3
+    inner.horizontal = 4
+    inner.vertical =   4
+    outer.left =       4
+    outer.bottom =     4
+    outer.top =        4
+    outer.right =      4
+
+# Workspace 10 will be assigned to the secondary monitor (if available).
+[workspace-to-monitor-force-assignment]
+    "1" = "main"
+    "2" = "main"
+    "3" = "main"
+    "4" = "main"
+    "5" = "main"
+    "6" = "main"
+    "7" = "main"
+    "8" = "main"
+    "9" = "main"
+    "10" = "secondary"
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
