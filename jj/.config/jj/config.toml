@@ -5,3 +5,9 @@ email = "cristian@crbelaus.com"
 [ui]
 editor = "nvim"
 diff-editor = ":builtin"
+default-command = "log"
+
+[aliases]
+blame = ["file", "annotate"]
+untrack = ["file", "untrack"]
+full-log = ["log", "-r", "::@"]
