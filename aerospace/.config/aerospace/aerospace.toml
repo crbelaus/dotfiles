@@ -235,3 +235,18 @@ automatically-unhide-macos-hidden-apps = false
     if.window-title-regex-substring = 'Picture in Picture'
     check-further-callbacks = true
     run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Notes'
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.iCal'
+    check-further-callbacks = true
+    run = ['layout floating']
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.reminders'
+    check-further-callbacks = true
+    run = ['layout floating']
