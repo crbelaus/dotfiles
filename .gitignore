@@ -1,3 +1,6 @@
 # Track only the fish config and functions
 fish/.config/fish/completions
 fish/.config/fish/fish_variables
+
+# Do not track jj config for specific repos
+jj/.config/jj/
