@@ -13,6 +13,7 @@ This is a personal dotfiles repository containing configuration files for variou
 - **jj/**: Jujutsu VCS configuration and per-repo configs under `jj/.config/jj/repos/`
 - **ghostty-macos/**: Ghostty terminal emulator configuration (macOS-specific)
 - **aerospace/**: AeroSpace tiling window manager configuration
+- **claude/**: Claude Code configuration
 - **Brewfile**: Homebrew bundle file listing all installed packages and applications
 - **setup_ubuntu.sh**: Bootstrap script for Ubuntu environments
 
