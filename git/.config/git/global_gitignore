@@ -11,3 +11,8 @@ opencode.json
 
 # Directory for saving tests, scripts and random things in projects
 .private/
+
+# Elixir Language Servers
+.dexter.db*
+.expert/
+.elixir_ls/
