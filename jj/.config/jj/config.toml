@@ -7,7 +7,11 @@ editor = "nvim"
 diff-editor = ":builtin"
 default-command = "log"
 
+[revsets]
+bookmark-advance-to = "@-" # advance bookmarks to the parent revision, not the working copy
+
 [aliases]
 blame = ["file", "annotate"]
 untrack = ["file", "untrack"]
 flog = ["log", "-r", "::@"]
+refresh = ["util", "exec", "--", "sh", "-c", "jj git fetch && jj new -r 'trunk()'"]
