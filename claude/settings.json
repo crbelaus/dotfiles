@@ -1,9 +1,6 @@
-// https://www.aihero.dev/how-to-kill-the-bloat-in-claude-codes-system-prompt
 {
   "permissions": {
     "deny": [
-      "EnterPlanMode",
-      "ExitPlanMode",
       "DesignSync",
       "NotebookEdit",
       "SendMessage",
@@ -11,12 +8,12 @@
       "RemoteTrigger",
       "ReportFindings",
       "ScheduleWakeup",
-      "AskUserQuestion",
       "CronCreate",
       "CronDelete",
       "CronList"
     ]
   },
+  "defaultMode": "auto",
   "disableBundledSkills": true,
   "disableWorkflows": true,
   "disableRemoteControl": true,
