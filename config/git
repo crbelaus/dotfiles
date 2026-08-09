@@ -36,6 +36,7 @@
 	logo = log --oneline
 	hardreset = "!git fetch && git reset --hard @{u}"
 	anonbranch = "!git checkout -b \"$(git config user.name)-$(date +%s)\""
+	deletebranches = "!git branch | grep -v '*' | xargs git branch -D"
 [log]
 	# Use ISO date format in logs
 	date = iso
