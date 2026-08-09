@@ -1,6 +1,8 @@
 {
   "permissions": {
     "deny": [
+      "EnterPlanMode",
+      "ExitPlanMode",
       "DesignSync",
       "NotebookEdit",
       "SendMessage",
@@ -8,15 +10,17 @@
       "RemoteTrigger",
       "ReportFindings",
       "ScheduleWakeup",
+      "AskUserQuestion",
       "CronCreate",
       "CronDelete",
       "CronList"
-    ]
+    ],
+    "defaultMode": "auto"
   },
-  "defaultMode": "auto",
-  "disableBundledSkills": true,
-  "disableWorkflows": true,
-  "disableRemoteControl": true,
   "disableClaudeAiConnectors": true,
-  "disableArtifact": true
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
+  "awaySummaryEnabled": false
 }
