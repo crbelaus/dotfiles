@@ -22,5 +22,6 @@
   "disableRemoteControl": true,
   "disableWorkflows": true,
   "disableArtifact": true,
-  "awaySummaryEnabled": false
+  "awaySummaryEnabled": false,
+  "autoMemoryEnabled": false
 }
