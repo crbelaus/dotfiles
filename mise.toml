@@ -5,7 +5,6 @@
 "~/.claude/CLAUDE.md"               = {}
 "~/.claude/settings.json"           = {}
 "~/.config/fish/config.fish"        = {}
-"~/.config/fish/functions"          = { source = "fish-functions", mode = "symlink-each" }
 "~/.config/ghostty/config"          = {}
 "~/.config/git/config"              = {}
 "~/.config/git/global-gitignore"    = {}

@@ -27,3 +27,5 @@ if status is-interactive
     set -g fish_greeting
     # Commands to run in interactive sessions can go here
 end
+
+alias claude-bluelabs='CLAUDE_CONFIG_DIR=~/.claude-bluelabs claude'
