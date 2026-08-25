@@ -1,10 +1,13 @@
 [dotfiles]
-"~/.config/jj/config.toml"            = "config/jj.toml"
-"~/.config/git/config"                = "config/git"
-"~/.config/git/global-gitignore"      = "config/global-gitignore"
-"~/.config/ghostty/config"            = "config/ghostty"
-"~/.config/fish/config.fish"          = "config/fish.fish"
-"~/.config/fish/functions"            = { source = "fish-functions", mode = "symlink-each" }
-"~/.claude-bluelabs"                  = { source = "claude", mode = "symlink-each" }
-"~/.claude-personal"                  = { source = "claude", mode = "symlink-each" }
-"~/.config/omniwm/settings.toml"      = "config/omniwm.toml"
+"~/.bashrc"                         = {}
+"~/.claude-bluelabs/CLAUDE.md"      = { source = ".claude/CLAUDE.md" }
+"~/.claude-bluelabs/settings.json"  = { source = ".claude/settings.json" }
+"~/.claude/CLAUDE.md"               = {}
+"~/.claude/settings.json"           = {}
+"~/.config/fish/config.fish"        = {}
+"~/.config/fish/functions"          = { source = "fish-functions", mode = "symlink-each" }
+"~/.config/ghostty/config"          = {}
+"~/.config/git/config"              = {}
+"~/.config/git/global-gitignore"    = {}
+"~/.config/jj/config.toml"          = {}
+"~/.config/omniwm/settings.toml"    = {}

@@ -23,5 +23,8 @@
   "disableWorkflows": true,
   "disableArtifact": true,
   "awaySummaryEnabled": false,
-  "autoMemoryEnabled": false
+  "tui": "fullscreen",
+  "autoMemoryEnabled": false,
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "auto"
 }
