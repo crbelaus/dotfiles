@@ -1,0 +1,4 @@
+[dotfiles]
+"~/.config/fish/config.fish"        = {}
+"~/.config/ghostty/config"          = {}
+"~/.config/omniwm/settings.toml"    = {}

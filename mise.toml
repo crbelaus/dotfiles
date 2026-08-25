@@ -1,12 +1,8 @@
 [dotfiles]
-"~/.bashrc"                         = {}
 "~/.claude-bluelabs/CLAUDE.md"      = { source = ".claude/CLAUDE.md" }
 "~/.claude-bluelabs/settings.json"  = { source = ".claude/settings.json" }
 "~/.claude/CLAUDE.md"               = {}
 "~/.claude/settings.json"           = {}
-"~/.config/fish/config.fish"        = {}
-"~/.config/ghostty/config"          = {}
 "~/.config/git/config"              = {}
 "~/.config/git/global-gitignore"    = {}
 "~/.config/jj/config.toml"          = {}
-"~/.config/omniwm/settings.toml"    = {}
