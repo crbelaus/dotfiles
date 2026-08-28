@@ -6,3 +6,4 @@
 "~/.config/git/config"              = {}
 "~/.config/git/global-gitignore"    = {}
 "~/.config/jj/config.toml"          = {}
+"~/.config/herdr/config.toml"       = {}
