@@ -1,8 +1,6 @@
 [dotfiles]
-"~/.claude-bluelabs/CLAUDE.md"      = { source = ".claude/CLAUDE.md" }
-"~/.claude-bluelabs/settings.json"  = { source = ".claude/settings.json" }
-"~/.claude/CLAUDE.md"               = {}
-"~/.claude/settings.json"           = {}
+"~/.claude/"	                    = { source = ".claude/", mode = "symlink-each" }
+"~/.claude-bluelabs/"		    = { source = ".claude/", mode = "symlink-each" }
 "~/.config/git/config"              = {}
 "~/.config/git/global-gitignore"    = {}
 "~/.config/jj/config.toml"          = {}
