@@ -4,10 +4,6 @@ if test -d /opt/homebrew
 end
 
 
-if test -f ~/google-cloud-sdk/path.fish.inc
-    . ~/google-cloud-sdk/path.fish.inc
-end
-
 if test -d ~/.local/bin
     fish_add_path ~/.local/bin
 end
