@@ -15,7 +15,6 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
   "disableClaudeAiConnectors": true,
   "disableBundledSkills": true,
   "disableRemoteControl": true,
@@ -23,7 +22,7 @@
   "disableArtifact": true,
   "outputStyle": "Concise",
   "awaySummaryEnabled": false,
-  "tui": "fullscreen",
+  "tui": "default",
   "autoMemoryEnabled": false,
   "skipDangerousModePermissionPrompt": true,
   "theme": "auto"
