@@ -1,6 +1,5 @@
 [dotfiles]
 "~/.config/fish/config.fish"        = {}
 "~/.config/ghostty/config"          = {}
-"~/.config/omniwm/settings.toml"    = {}
 "~/.config/aerospace/aerospace.toml" = {}
 "~/.config/kitty/kitty.conf"        = {}
