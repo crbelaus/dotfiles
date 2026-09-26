@@ -1,5 +1,4 @@
 [dotfiles]
-"~/.claude-bluelabs/" = { source = ".claude/", mode = "symlink-each" }
 "~/.claude/" = { source = ".claude/", mode = "symlink-each" }
 "~/.config/aerospace/aerospace.toml" = {}
 "~/.config/fish/config.fish" = {}
