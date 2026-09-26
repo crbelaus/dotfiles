@@ -4,36 +4,47 @@
 	email = cristian@crbelaus.com
 [core]
 	excludesfile = ~/.config/git/global-gitignore
-	editor = nvim
+[column]
+	ui = auto # Show branch/tag lists in columns
+[help]
+	autocorrect = prompt # Offer to run the command when mistyped
+[commit]
+	verbose = true # Show the diff in the commit message editor
 [merge]
 	conflictstyle = zdiff3 # More context during conflict resolution
 [rerere]
-  enabled = true # Record and reuse conflict resolutions
-  autoupdate = true # Apply stored and confict resolutions automatically
+	enabled = true # Record and reuse conflict resolutions
+	autoupdate = true # Stage files resolved by rerere
+[fetch]
+	prune = true # Delete local refs to branches removed on the remote
+	pruneTags = true # Delete local tags removed on the remote
 [pull]
-  rebase = true # Rebase (instead of merge) on pull
+	rebase = true # Rebase (instead of merge) on pull
 [diff]
 	algorithm = histogram # Clearer diffs on moved/edited lines
-  colorMoved = plain # Highlight moved blocks in diffs
-  mnemonicPrefix = true # More intuitive refs in diff output
+	colorMoved = plain # Highlight moved blocks in diffs
+	mnemonicPrefix = true # More intuitive refs in diff output
+	renames = copies # Detect copies as well as renames
 [init]
 	defaultBranch = main # Use main as default branch for new repos
 [rebase]
 	autoSquash = true # Autosquash fixup commits automatically
+	autoStash = true # Stash uncommitted changes before rebasing
+	updateRefs = true # Move stacked branches along with the rebased one
 [push]
 	default = current # Push to the branch with the same name on the remote
-  autoSetupRemote = true # Automatically set upstream branch on push
+	autoSetupRemote = true # Automatically set upstream branch on push
 [alias]
 	wdiff = diff --color-words
-	logo = log --oneline
+	logo = log --oneline --graph
 	hardreset = "!git fetch && git reset --hard @{u}"
-	anonbranch = "!git checkout -b \"$(git config user.name)-$(date +%s)\""
-	deletebranches = "!git branch | grep -v '*' | xargs git branch -D"
+	anonbranch = "!git switch -c \"$(git config user.name)-$(date +%s)\""
+	deletebranches = "!git branch --merged | grep -vE '^[*+]|\\bmain\\b' | xargs -r git branch -d"
 [log]
 	date = iso # Use ISO date format
 [branch]
-  sort = -committerdate # Sort branches by most recent commit first
+	sort = -committerdate # Sort branches by most recent commit first
 [tag]
-  sort = -version:refname # Sort version numbers as you would expect
+	sort = -version:refname # Sort version numbers as you would expect
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+	pushInsteadOf = https://github.com/ # Fetch over HTTPS, push over SSH
