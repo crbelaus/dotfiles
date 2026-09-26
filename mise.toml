@@ -1,13 +1,13 @@
 [dotfiles]
-"~/.claude-bluelabs/"                = { source = ".claude/", mode = "symlink-each" }
-"~/.claude/"                         = { source = ".claude/", mode = "symlink-each" }
-"~/.config/aerospace/aerospace.toml"  = {}
-"~/.config/fish/config.fish"             = {}
-"~/.config/git/config"                 = {}
-"~/.config/git/global-gitignore"      = {}
-"~/.config/herdr/config.toml"          = {}
-"~/.config/jj/config.toml"             = {}
-"~/.config/kitty/kitty.conf"          = {}
+"~/.claude-bluelabs/" = { source = ".claude/", mode = "symlink-each" }
+"~/.claude/" = { source = ".claude/", mode = "symlink-each" }
+"~/.config/aerospace/aerospace.toml" = {}
+"~/.config/fish/config.fish" = {}
+"~/.config/git/config" = {}
+"~/.config/git/global-gitignore" = {}
+"~/.config/herdr/config.toml" = {}
+"~/.config/jj/config.toml" = {}
+"~/.config/kitty/kitty.conf" = {}
 
 [bootstrap.packages]
 "brew:openssl@3" = "latest"
@@ -33,7 +33,6 @@
 "brew:jjui" = "latest"
 "brew:k9s" = "latest"
 "brew:libpq" = "latest"
-"brew:mise" = "latest"
 "brew:neovim" = "latest"
 "brew:ossp-uuid" = "latest"
 "brew:pkgconf" = "latest"
