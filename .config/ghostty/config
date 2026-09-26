@@ -1,8 +1,0 @@
-font-family = "JetBrainsMono Nerd Font"
-font-style = Regular
-font-size = 14
-
-cursor-style = "block"
-cursor-style-blink = false
-
-shell-integration-features = no-cursor,ssh-env,ssh-terminfo
