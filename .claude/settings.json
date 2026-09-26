@@ -22,7 +22,7 @@
   "disableArtifact": true,
   "outputStyle": "Concise",
   "awaySummaryEnabled": false,
-  "tui": "default",
+  "tui": "fullscreen",
   "autoMemoryEnabled": false,
   "skipDangerousModePermissionPrompt": true,
   "theme": "auto"
