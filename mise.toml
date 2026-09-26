@@ -53,7 +53,6 @@
 "brew-cask:firefox" = "latest"
 "brew-cask:font-jetbrains-mono" = "latest"
 "brew-cask:font-open-sans" = "latest"
-"brew-cask:ghostty" = "latest"
 "brew-cask:kitty" = "latest"
 "brew-cask:obsidian" = "latest"
 "brew-cask:onlyoffice" = "latest"
@@ -68,4 +67,3 @@
 "brew-cask:utm" = "latest"
 "brew-cask:visual-studio-code" = "latest"
 "brew-cask:vlc" = "latest"
-"brew-cask:vscodium" = "latest"
