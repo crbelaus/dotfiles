@@ -3,3 +3,11 @@
 "~/.config/ghostty/config"          = {}
 "~/.config/aerospace/aerospace.toml" = {}
 "~/.config/kitty/kitty.conf"        = {}
+
+[tasks.brew-dump]
+describe = "Create a Brewfile for brew packages and casks"
+run = "brew bundle dump --file=Brewfile --force --no-go --no-vscode --no-npm"
+
+[tasks.brew-bundle]
+describe = "Install brew packages and casks from Brewfile"
+run = "brew bundle install --file=Brewfile"
