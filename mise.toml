@@ -15,3 +15,7 @@ run = "brew bundle dump --file=Brewfile --force --no-go --no-vscode --no-npm"
 [tasks.brew-bundle]
 description = "Install brew packages and casks from Brewfile"
 run = "brew bundle install --file=Brewfile"
+"~/.config/zsh/.zprofile" = {}
+"~/.config/zsh/.zshrc" = {}
+"~/.zshenv" = {}
+
