@@ -7,15 +7,67 @@
 "~/.config/herdr/config.toml" = {}
 "~/.config/jj/config.toml" = {}
 "~/.config/ghostty/config.ghostty" = {}
-
-[tasks.brew-dump]
-description = "Create a Brewfile for brew packages and casks"
-run = "brew bundle dump --file=Brewfile --force --no-go --no-vscode --no-npm"
-
-[tasks.brew-bundle]
-description = "Install brew packages and casks from Brewfile"
-run = "brew bundle install --file=Brewfile"
 "~/.config/zsh/.zprofile" = {}
 "~/.config/zsh/.zshrc" = {}
 "~/.zshenv" = {}
 
+
+[bootstrap.brew.taps]
+"nikitabobko/tap" = "https://github.com/nikitabobko/homebrew-tap.git"
+
+
+[bootstrap.packages]
+"brew:openssl@3" = "latest"
+"brew:readline" = "latest"
+"brew:sqlite" = "latest"
+"brew:asyncapi" = "latest"
+"brew:cmake" = "latest"
+"brew:curl" = "latest"
+"brew:difftastic" = "latest"
+"brew:libyaml" = "latest"
+"brew:duckdb" = "latest"
+"brew:ffmpeg" = "latest"
+"brew:fish" = "latest"
+"brew:fzf" = "latest"
+"brew:gcc" = "latest"
+"brew:gh" = "latest"
+"brew:git" = "latest"
+"brew:gnupg" = "latest"
+"brew:herdr" = "latest"
+"brew:hurl" = "latest"
+"brew:imapsync" = "latest"
+"brew:jj" = "latest"
+"brew:jjui" = "latest"
+"brew:k9s" = "latest"
+"brew:libpq" = "latest"
+"brew:neovim" = "latest"
+"brew:ossp-uuid" = "latest"
+"brew:pkgconf" = "latest"
+"brew:qemu" = "latest"
+"brew:ripgrep" = "latest"
+"brew:tmux" = "latest"
+"brew:tree" = "latest"
+"brew:watch" = "latest"
+"brew:xpdf" = "latest"
+"brew:zlib" = "latest"
+"brew-cask:1password" = "latest"
+"brew-cask:1password-cli" = "latest"
+"brew-cask:nikitabobko/tap/aerospace" = "latest"
+"brew-cask:betterdisplay" = "latest"
+"brew-cask:brave-browser" = "latest"
+"brew-cask:firefox" = "latest"
+"brew-cask:font-jetbrains-mono" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:obsidian" = "latest"
+"brew-cask:onlyoffice" = "latest"
+"brew-cask:orbstack" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:spotify" = "latest"
+"brew-cask:syncthing-app" = "latest"
+"brew-cask:tablepro" = "latest"
+"brew-cask:tailscale-app" = "latest"
+"brew-cask:transmission" = "latest"
+"brew-cask:twingate" = "latest"
+"brew-cask:utm" = "latest"
+"brew-cask:visual-studio-code" = "latest"
+"brew-cask:vlc" = "latest"
